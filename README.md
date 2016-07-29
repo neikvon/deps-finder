@@ -22,10 +22,10 @@ const code = fs.readFileSync('./demo.js', 'utf8')
 
 const deps = new depsFinder(code)
 
-console.log(deps.getDeps())
+deps.getDeps()
 // [ '../../config.js', 'koa', 'pm2', 'fs' ]
 
-console.log(deps.splitDeps())
+deps.splitDeps()
 // { local: [ '../../config.js' ], thirdparty: [ 'koa', 'pm2', 'fs' ] }
 
 
