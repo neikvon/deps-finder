@@ -13,7 +13,7 @@ const app = new Koa()
 
 ```
 
-```
+```js
 // test.js
 const fs = require('fs')
 const depsFinder = require('deps-finder')
